@@ -1,3 +1,432 @@
 html
+  color: #888888
+  line-height: 1
   font-family: "Georgia", serif
   font-weight: 400
+  font-size: 12px
+
+body
+  margin: 0
+  padding: 0
+
+a
+  color: inherit
+  text-decoration: none
+
+  &:hover
+    text-decoration: underline
+
+.container
+  box-sizing: border-box
+  margin: 0 auto
+  max-width: 960px
+  padding: 0 30px
+  width: 100%
+
+.header
+  border-top: 5px solid #81b300
+
+  &--container
+    display: flex
+    flex-direction: column
+
+  &__first-line
+    align-items: flex-end
+    display: flex
+    flex-wrap: wrap-reverse
+    justify-content: space-between
+    margin-bottom: 15px
+    min-height: 70px
+
+  &__title
+    align-self: flex-start
+    color: #333333
+    margin: 0
+    text-transform: uppercase
+    font-size: 36px
+    font-weight: 400
+
+    &:first-letter
+      font-size: 46px
+
+  &__social-links
+    background-color: #81b300
+    border-radius: 0 0 15px 15px
+    margin-bottom: 20px
+
+    &__list
+      display: flex
+      flex-wrap: wrap
+      margin: 0
+      padding: 0 13px
+
+    &__item
+      background-color: #1f1f1f
+      border-radius: 100%
+      list-style-type: none
+      margin: 7px 0 9px 0
+      height: 32px
+      width: 32px
+      transition: background-color 0.1s ease-out
+
+      &:hover
+        background-color: #00acee
+
+      &:not(:last-child)
+        margin-right: 16px
+
+    &__link
+      align-items: center
+      box-sizing: border-box
+      display: flex
+      justify-content: center
+      height: 100%
+      width: 100%
+      padding: 8px
+
+    &__icon
+      height: 100%
+      object-fit: contain
+      width: 100%
+
+  &__second-line
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-bottom: 40px
+
+  &__description
+    margin: 0
+
+  &__links
+    display: flex
+    margin: 0
+    padding: 0
+
+    &__item
+      color: #81b300
+      display: inline-block
+      list-style-type: none
+
+      &:not(:last-child)::after
+        content: "\00a0|\00a0"
+
+.navigation
+  background-color: #81b300
+  padding: 20px 0 15px 0
+
+  &__list
+    align-items: center
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    margin: 0
+    padding: 0
+
+  &__item
+    color: #ffffff
+    list-style-type: none
+    margin-bottom: 5px
+    text-transform: uppercase
+    font-size: 13px
+    transition: color 0.1s ease-out
+
+    &:hover
+      color: #000000
+
+    &:not(:last-child)
+      margin-right: 20px
+
+    &--search
+      margin-left: auto
+
+  &__link
+    height: 100%
+    width: 100%
+
+    &:hover
+      text-decoration: none
+
+  &__input,
+  &__button
+    background-color: #ffffff
+    border: 1px solid #dddddd
+    box-sizing: content-box
+    display: inline-block
+    height: 32px
+    padding: 0 6px
+    font: inherit
+
+  &__button
+    color: #81b300
+    cursor: pointer
+    line-height: 13px
+    text-transform: uppercase
+
+  &__input + &__button
+    border-left: none
+
+.section
+  padding: 30px 0
+
+  &__text
+    text-align: center
+
+    &--hidden
+      visibility: hidden
+      font-size: 0
+
+  &--slider
+    background-color: #f2f2f2
+
+  &--about
+    padding-top: 50px
+
+  &--project
+    padding-bottom: 50px
+
+.slider
+  display: flex
+  flex-direction: column
+
+  &__img-wrapper
+    border: 9px solid #ffffff
+    box-shadow: 0 0 0 1px #e6e6e6
+    max-height: 360px
+    max-width: 880px
+    overflow: hidden
+
+  &__img
+    height: 100%
+    object-fit: cover
+    object-position: center
+    width: 100%
+
+  &__controls
+    align-items: center
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    margin: 20px 0 0 0
+    padding: 0
+    font-size: 0
+
+    &__item,
+    &__move
+      background-color: #333333
+      border-radius: 100%
+      list-style-type: none
+
+      &:focus-within,
+      &:hover
+        background-color: #666666
+
+      &__button
+        background-color: transparent
+        border: none
+        cursor: pointer
+        height: 100%
+        padding: 4px
+        width: 100%
+
+      &__img
+        height: 100%
+        object-fit: contain
+        object-position: center
+        width: 100%
+
+    &__item
+      height: 12px
+      width: 12px
+
+      &:not(:last-child)
+        margin-right: 9px
+
+      &--active
+        background-color: transparent
+        border: 1px solid #333333
+        box-sizing: border-box
+
+    &__move
+      height: 20px
+      width: 20px
+
+      &:not(:last-child)
+        margin-right: 10px
+
+      &__button
+        align-items: center
+        display: flex
+        justify-content: center
+
+.about,
+.projects
+  border-bottom: 1px solid #e2e2e2
+  display: grid
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr))
+  gap: 20px
+  margin: 0
+  padding: 0 0 50px 0
+
+  &__item
+    display: flex
+    flex-direction: column
+    justify-content: center
+    list-style-type: none
+    text-align: center
+
+  &__img,
+  &__title
+    margin: 0 0 20px 0
+
+  &__img
+    max-width: 100%
+    object-fit: contain
+    object-position: center
+
+  &__title
+    color: #81b300
+    line-height: 21.6px
+    font-size: 18px
+    font-weight: 400
+
+  &__text
+    line-height: 20.8px
+    margin: 0
+    font-size: 13px
+
+.projects
+  border-bottom: none
+
+  &__item
+    text-align: left
+
+  &__img-wrapper
+    border: 4px solid #ffffff
+    box-shadow: 0 0 0 1px #e6e6e6
+    margin: 0 auto 20px auto
+    max-height: 130px
+    max-width: 200px
+    overflow: hidden
+
+  &__img
+    height: 100%
+    margin-bottom: 0
+    object-fit: cover
+    object-position: center
+    width: 100%
+
+  &__title
+    color: #444444
+    line-height: 16.8px
+    margin-bottom: 15px
+    font-size: 14px
+
+  &__text
+    margin-bottom: 14px
+
+  &__link
+    color: #81b300
+    text-align: right
+
+    &::after
+      content: " »"
+
+.footer
+  background-color: #3b3b3b
+  color: #999999
+  padding-top: 40px
+
+  & > .container
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr))
+    gap: 20px
+
+  &__copyright
+    background-color: #2e2e2e
+    grid-column: 1 / -1
+    margin-top: 40px
+    padding: 25px 0
+
+    & > .container
+      display: flex
+      justify-content: space-between
+
+    &__text
+      color: #737373
+      margin: 0
+
+      &:not(:last-child)
+        margin-right: 30px
+
+  &__title
+    color: #666666
+    line-height: 15.6px
+    margin: 0 0 30px 0
+    font-size: 13px
+    text-transform: uppercase
+
+  &__text
+    line-height: 20.8px
+    font-size: 13px
+
+    &--small
+      line-height: 19.2px
+      margin: 26px 0 0 0
+      font-size: 12px
+
+  &__links-list
+    margin: 0
+    padding: 0
+
+    &__item
+      border-bottom: 1px solid #484848
+      line-height: 14.4px
+      list-style-type: none
+      font-size: 12px
+      padding: 10px 0
+
+  &__post
+    display: flex
+    flex-direction: column
+
+    &__title
+      line-height: 15.6px
+      margin: 0
+      font-size: 13px
+      font-weight: 400
+
+    &__author
+      line-height: 13.2px
+      margin: 0
+      font-size: 11px
+
+    &__text
+      line-height: 19.2px
+      margin: 10px 15px 0 0
+      font-size: 12px
+
+    &__link
+      color: #81b300
+      text-align: right
+
+      &::after
+        content: " »"
+
+  &__input,
+  &__button
+    background-color: #1f1f1f
+    border: none
+    border-radius: 4px
+    color: inherit
+    line-height: 20.58px
+    margin-bottom: 10px
+    font: inherit
+    font-size: 13px
+    padding: 8px 10px
+
+  &__button
+    color: #81b300
+    margin-bottom: 0
+    padding: 10px
+    text-transform: uppercase
