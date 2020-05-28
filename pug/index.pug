@@ -1,0 +1,152 @@
+doctype
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width,initial-scale=1,maximum-scale=1")
+        link(rel="stylesheet", href="./css/style.css")
+        title Concomitant
+
+    body
+        header.header
+            .container.header--container
+                .header__first-line
+                    h1.header__title Concomitant
+
+                    .header__social-links
+                        ul.header__social-links__list
+                            li.header__social-links__item: a.header__social-links__link(href="#linkedin")
+                                img.header__social-links__icon(src="./images/social-links/icon-linkedin.svg", alt="linkedin")
+                            li.header__social-links__item: a.header__social-links__link(href="#twiiter")
+                                img.header__social-links__icon(src="./images/social-links/icon-twitter.svg", alt="twitter")
+                            li.header__social-links__item: a.header__social-links__link(href="#pinterest")
+                                img.header__social-links__icon(src="./images/social-links/icon-pinterest.svg", alt="pinterest")
+                            li.header__social-links__item: a.header__social-links__link(href="#google-plus")
+                                img.header__social-links__icon(src="./images/social-links/icon-google-plus.svg", alt="google plus")
+                            li.header__social-links__item: a.header__social-links__link(href="#rss")
+                                img.header__social-links__icon(src="./images/social-links/icon-rss.svg", alt="rss")
+
+                .header__second-line
+                    p.header__description Free PSD Website Template
+
+                    ul.header__links
+                        li.header__links__item: a.header__links__link(href="#sign-up") Sign Up
+                        li.header__links__item: a.header__links__link(href="#login") Login
+                        li.header__links__item: a.header__links__link(href="#rss-feeds") RSS Feeds
+                        li.header__links__item: a.header__links__link(href="#archived-news") Archived News
+
+        nav.navigation
+            .container
+                ul.navigation__list
+                    li.navigation__item: a.navigation__link(href="#homepage") Homepage
+                    li.navigation__item: a.navigation__link(href="#style-demo") Style Demo
+                    li.navigation__item: a.navigation__link(href="#full-width") Full Width
+                    li.navigation__item: a.navigation__link(href="#portfolio") Portfolio
+                    li.navigation__item: a.navigation__link(href="#gallery") Gallery
+                    li.navigation__item: a.navigation__link(href="#dropdown") Dropdown
+                    li.navigation__item.navigation__item--search
+                        form(action="/", method="get")
+                            input.navigation__input(type="text", placeholder="Search Our Website...", name="search")
+                            button.navigation__button(type="submit") Search
+
+        section.section.section--slider
+            .container
+                h2.section__text.section__text--hidden Slider
+                .slider
+                    .slider__img-wrapper
+                        img.slider__img(src="./images/slider/880x360px.png", alt="slider placeholder 880x360px")
+
+                    ul.slider__controls
+                        li.slider__controls__move
+                            button.slider__controls__move__button
+                                img.slider__controls__move__img(src="./images/slider/icon-left-arrow.svg", alt="left arrow")
+
+                        li.slider__controls__item: button.slider__controls__item__button
+                        li.slider__controls__item: button.slider__controls__item__button
+                        li.slider__controls__item: button.slider__controls__item__button
+                        li.slider__controls__item.slider__controls__item--active: button.slider__controls__item__button
+                        li.slider__controls__item: button.slider__controls__item__button
+
+                        li.slider__controls__move
+                            button.slider__controls__move__button
+                                img.slider__controls__move__img(src="./images/slider/icon-right-arrow.svg", alt="right arrow")
+
+        section.section.section--about
+            .container
+                ul.about
+                    li.about__item
+                        img.about__img(src="./images/section--about/icon-group.svg", alt="group")
+                        h2.about__title Vivamuslibero Augue
+                        p.about__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper pellentesque.
+                    li.about__item
+                        img.about__img(src="./images/section--about/icon-globe.svg", alt="globe")
+                        h2.about__title Vivamuslibero Augue
+                        p.about__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper pellentesque.
+                    li.about__item
+                        img.about__img(src="./images/section--about/icon-cogs.svg", alt="cogs")
+                        h2.about__title Vivamuslibero Augue
+                        p.about__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper pellentesque.
+                    li.about__item
+                        img.about__img(src="./images/section--about/icon-leaf.svg", alt="leaf")
+                        h2.about__title Vivamuslibero Augue
+                        p.about__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper pellentesque.
+
+        section.section.section--projects
+            .container
+                ul.projects
+                    li.projects__item
+                        .projects__img-wrapper
+                            img.projects__img(src="./images/section--projects/200x130px.png", alt="project placeholder 200x130px")
+                        h2.projects__title Project Title
+                        p.projects__text Portortornec condimenterdum eget consectetuer condis consequam pretium pellus sed mauris enim. Puruselit mauris nulla hendimentesque elit semper nam a sapien urna sempus.
+                        a.projects__link(href="#view-details") View Details
+                    li.projects__item
+                        .projects__img-wrapper
+                            img.projects__img(src="./images/section--projects/200x130px.png", alt="project placeholder 200x130px")
+                        h2.projects__title Project Title
+                        p.projects__text Portortornec condimenterdum eget consectetuer condis consequam pretium pellus sed mauris enim. Puruselit mauris nulla hendimentesque elit semper nam a sapien urna sempus.
+                        a.projects__link(href="#view-details") View Details
+                    li.projects__item
+                        .projects__img-wrapper
+                            img.projects__img(src="./images/section--projects/200x130px.png", alt="project placeholder 200x130px")
+                        h2.projects__title Project Title
+                        p.projects__text Portortornec condimenterdum eget consectetuer condis consequam pretium pellus sed mauris enim. Puruselit mauris nulla hendimentesque elit semper nam a sapien urna sempus.
+                        a.projects__link(href="#view-details") View Details
+                    li.projects__item
+                        .projects__img-wrapper
+                            img.projects__img(src="./images/section--projects/200x130px.png", alt="project placeholder 200x130px")
+                        h2.projects__title Project Title
+                        p.projects__text Portortornec condimenterdum eget consectetuer condis consequam pretium pellus sed mauris enim. Puruselit mauris nulla hendimentesque elit semper nam a sapien urna sempus.
+                        a.projects__link(href="#view-details") View Details
+
+        footer.footer
+            .container
+                .footer__item
+                    h2.footer__title Contact Details
+                    p.footer__text Convallisijusto vestas mus pellentum aenean sapibulum in aliquam volut pat integest nulla.
+                    p.footer__text.footer__text--small Tel: xxxxx xxxxxxxxxx <br> Fax: xxxxx xxxxxxxxxx <br> Email: contact@mydomain.com
+                .footer__item
+                    h2.footer__title Quick Links
+                    ul.footer__links-list
+                        li.footer__links-list__item: a.footer__links-list__link(href="#footer-link") Link Text Here
+                        li.footer__links-list__item: a.footer__links-list__link(href="#footer-link") Link Text Here
+                        li.footer__links-list__item: a.footer__links-list__link(href="#footer-link") Link Text Here
+                        li.footer__links-list__item: a.footer__links-list__link(href="#footer-link") Link Text Here
+                .footer__item
+                    h2.footer__title From The Blog
+                    .footer__post
+                        h3.footer__post__title Blog Post Title
+                        p.footer__post__author Posted by Admin on 00.00.0000
+                        p.footer__post__text Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed facilispede estibulum.
+                        a.footer__post__link(href="#footer-link") Read More
+
+                .footer__item
+                    h2.footer__title Grab Our Newsletter
+                    form.footer__form(action="/", method="post")
+                        input.footer__input(type="text", name="name", placeholder="Name", required, pattern="^([A-ZА-ЯЁ][a-zа-яё]+)$")
+                        input.footer__input(type="email", name="email", placeholder="Email", required, pattern="^([a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]{2,64})$")
+                        input.footer__button(type="submit", value="Submit")
+
+            .footer__copyright
+                .container
+                    p.footer__copyright__text Copyright &copy; 2013 - All Rights Reserved - Domain Name
+                    p.footer__copyright__text Template by OS Templates
